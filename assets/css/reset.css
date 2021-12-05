@@ -46,15 +46,16 @@ ul li a {
     z-index: 0;
 }
 
-main {
+.aboutMeSection {
     display: flex;
 }
 
 .aside {
-    width: 35%;
+    width: clamp(200px, 35%, 300px);
     border-right: solid var(--grey) 3px;
     text-align: right;
     font-size: 200%;
+    color: var(--grey);
     background-color: none;
 }
 
@@ -74,24 +75,10 @@ main {
     
 }
 
-.main2 {
+.work-section {
     display: flex;
     flex-wrap: wrap;
     
-}
-
-.work {
-    width: 35%;
-    min-width: 35%;
-    border-right: solid var(--grey);
-    text-align: right;
-    font-size: 200%;
-    color: var(--grey);
-}
-
-.work h3 {
-    margin-right: 5px;
-    margin-top: 4px;
 }
 
 .images {
