@@ -12,19 +12,19 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--grey);
+    justify-content: space-between;
+    align-items: center;
+}
+
 .mainHeader {
-    position: absolute;
     color: var(--grey);
     background-color: aqua;
     padding: 6px;
-    margin-top: 12px;
-}
-
-nav {
-    display: flex;
-    background-color: var(--grey);
-    line-height: 40px;
-    justify-content: right;
+    margin: 12px 0;
 }
 
 ul li {
