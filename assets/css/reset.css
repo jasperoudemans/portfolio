@@ -82,13 +82,10 @@ ul li a {
     margin-left: 2%;
     margin-right: 5%;
     padding-top: 0.5%;
-    
 }
 
 .work-section {
     display: flex;
-    
-    
 }
 
 .images {
@@ -98,6 +95,7 @@ ul li a {
 
 .relative {
     position: relative;
+    border: 2px solid aqua;
 }
 
 .big {
@@ -114,12 +112,8 @@ ul li a {
     opacity: 0.2;
 }
 
-.filter:hover {
+.relative:hover .filter {
     display: none;
-}
-
-.img {
-    
 }
 
 .images2 {
@@ -129,11 +123,4 @@ ul li a {
 #project1 {
     width: 100%;
     height: 100%;
-    border: 2px solid aqua;
-
-}
-
-.img2 {
-    margin: 5px 8px 5px 0;
-    border: 2px solid aqua;
 }
