@@ -83,7 +83,6 @@ ul li a {
 
 .images {
     margin-left: 2%;
-    max-width: 60%;
     padding-top: 0.5%;
 }
 
@@ -99,8 +98,17 @@ ul li a {
     
 }
 
+.images2 {
+    display: flex;
+}
+
 #project1 {
     width: 750px;
     height: 400px;
+    border: 2px solid aqua;
+}
+
+.img2 {
+    margin: 5px 8px 5px 0;
     border: 2px solid aqua;
 }
