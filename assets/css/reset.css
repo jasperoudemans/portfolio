@@ -1,5 +1,6 @@
 :root {
     --grey: rgb(99, 99, 99);
+    --turq: rgb(57, 255, 255);
 }
 
 * {
@@ -33,8 +34,12 @@ ul li {
 }
 
 ul li a {
-    text-decoration: underline;
+    text-decoration: none;
     color: aqua;
+    border-bottom: 2px aqua solid;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .banner {
@@ -71,10 +76,13 @@ main {
 
 .main2 {
     display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .work {
     width: 35%;
+    min-width: 35%;
     border-right: solid var(--grey);
     text-align: right;
     font-size: 200%;
@@ -89,8 +97,19 @@ main {
 .images {
     margin-left: 2%;
     max-width: 60%;
-    display: flex;
     padding-top: 0.5%;
+}
+
+.filter {
+    position: absolute;
+    right: 5%;
+    background-color: none;
+    height: 300px;
+    display: none;
+}
+
+.img {
+    
 }
 
 #project1 {
