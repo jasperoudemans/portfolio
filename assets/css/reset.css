@@ -65,6 +65,7 @@ ul li a {
     text-align: right;
     color: var(--grey);
     background-color: none;
+    flex-shrink: 0;
 }
 
 .aside h3 {
@@ -86,7 +87,7 @@ ul li a {
 
 .work-section {
     display: flex;
-    flex-wrap: wrap;
+    
     
 }
 
