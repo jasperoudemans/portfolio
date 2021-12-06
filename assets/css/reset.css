@@ -26,6 +26,8 @@ header {
     background-color: aqua;
     padding: 6px;
     margin: 12px 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 ul li {
@@ -95,12 +97,16 @@ ul li a {
 
 .relative {
     position: relative;
-    border: 2px solid aqua;
+    border: 4px solid aqua;
 }
 
 .big {
     height: 400px;
     margin-bottom: 1rem;
+}
+
+.small {
+    /* height: 200px; */
 }
 
 .filter {
@@ -125,4 +131,40 @@ ul li a {
 #project1 {
     width: 100%;
     height: 100%;
+}
+
+.img2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer aside {
+    width: clamp(200px, 35%, 300px);
+    border-right: solid var(--grey) 3px;
+    text-align: right;
+    color: var(--grey);
+    background-color: none;
+    flex-shrink: 0;
+}
+
+.footer h3 {
+    font-size: 2.5rem;
+    margin-right: 5px;
+    margin-top: 4px;
+    color: var(--grey);
+}
+
+.footer-section {
+    display: flex;
+}
+
+.contact {
+    padding: 1rem;
+}
+
+.contact-info li {
+    font-size: 14px;
+    margin-right: 2rem;
+    margin-left: 1rem;
 }
