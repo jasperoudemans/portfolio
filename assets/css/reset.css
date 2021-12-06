@@ -106,7 +106,7 @@ ul li a {
 }
 
 .small {
-    /* height: 200px; */
+    margin-bottom: 1rem;
 }
 
 .filter {
@@ -117,10 +117,11 @@ ul li a {
     left: 0;
     background-color: red;
     opacity: 0.2;
+    transition: opacity linear 0.2s;
 }
 
 .relative:hover .filter {
-    display: none;
+    opacity: 0;
 }
 
 .images2 {
@@ -137,6 +138,11 @@ ul li a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.long {
+    width: 400px;
+    height: 200px;
 }
 
 footer aside {
@@ -168,3 +174,24 @@ footer aside {
     margin-right: 2rem;
     margin-left: 1rem;
 }
+
+.label {
+    position: absolute;
+    display: flex;
+    bottom: 2rem;
+    background-color: aqua;
+    z-index: 1;
+    height: 3rem;
+    align-items: center;
+}
+
+.label h4 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    aside flex-direction: column;
+} 
+    
+
