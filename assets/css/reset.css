@@ -48,6 +48,21 @@ ul li a {
 .banner {
     width: 100vw;
     height: 100px;
+    position: relative;
+}
+
+.profile {
+    position: absolute;
+    display: flex;
+    width: 100px;
+    top: 0;
+    bottom: 0;
+    left: 1rem;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .banner img {
@@ -212,11 +227,13 @@ footer aside {
         border-right: none;
         border-bottom: 3px solid var(--grey);
         margin-bottom: 1rem;
+        margin-left: 4rem;
     }
     footer aside {
         border-right: none;
         border-bottom: 3px solid var(--grey);
         margin-bottom: 1rem;
+        margin-left: 4rem;
     }
 } 
     
