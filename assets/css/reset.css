@@ -191,7 +191,32 @@ footer aside {
 }
 
 @media screen and (max-width: 768px) {
-    aside flex-direction: column;
+    .aboutMeSection {
+        flex-direction: column;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .work-section {
+        flex-direction: column;
+    }
+
+} 
+
+@media screen and (max-width: 768px) {
+    .footer-section {
+        flex-direction: column;
+    }
+    .aside {
+        border-right: none;
+        border-bottom: 3px solid var(--grey);
+        margin-bottom: 1rem;
+    }
+    footer aside {
+        border-right: none;
+        border-bottom: 3px solid var(--grey);
+        margin-bottom: 1rem;
+    }
 } 
     
 
