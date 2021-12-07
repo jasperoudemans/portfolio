@@ -136,6 +136,14 @@ ul li a {
     transition: opacity linear 0.2s;
 }
 
+.filter a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
 .relative:hover .filter {
     opacity: 0;
 }
