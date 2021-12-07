@@ -88,6 +88,7 @@ ul li a {
 
 .work-section {
     display: flex;
+    margin-right: 0.5rem;
 }
 
 .images {
