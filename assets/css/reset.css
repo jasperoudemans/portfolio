@@ -45,6 +45,10 @@ ul li a {
     padding-right: 4px;
 }
 
+#resume {
+    display: none;
+}
+
 .banner {
     width: 100vw;
     height: 100px;
