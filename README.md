@@ -9,6 +9,8 @@ The top banner has a circle-cropped photo of me absolutely positioned on it.
 
 ## Screenshot of deployed application:
 
+![Screen Shot 2021-12-07 at 9 56 22 PM](https://user-images.githubusercontent.com/88591791/145151285-e8fafb2f-4a08-4619-8b4d-d9c3c75f2717.png)
+
 ## Link to deployed application:
 
 https://jasperoudemans.github.io/portfolio/
