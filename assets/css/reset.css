@@ -126,6 +126,8 @@ ul li a {
 }
 
 .small {
+  max-width: 400px;
+  max-height: 300px;
   margin-bottom: 1rem;
 }
 
