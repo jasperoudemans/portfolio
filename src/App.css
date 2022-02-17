@@ -194,15 +194,6 @@ footer aside {
   color: var(--grey);
 }
 
-.footer-section {
-  display: flex;
-}
-
-.contact {
-  padding: 1rem;
-  padding-top: 0;
-}
-
 .contact-info li {
   font-size: 14px;
   margin-right: 2rem;
@@ -234,6 +225,14 @@ footer aside {
   .work-section {
     flex-direction: column;
   }
+}
+
+.footer {
+  display: flex;
+  background-color: var(--grey);
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import MainProject from "../components/MainProject";
 import ProfileSection from "../components/ProfileSection";
@@ -80,31 +81,6 @@ const Home = () => {
           </div>
         </ProfileSection>
       </main>
-
-      <br />
-      <br />
-      <footer>
-        <ProfileSection title="Contact Me" id="contact">
-          <div className="contact">
-            <ul className="contact-info">
-              <li>707-590-****</li>
-              <li>
-                <a href="mailto:jasperoudemans@gmail.com">
-                  jasperoudemans@gmail.com
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/jasperoudemans">GitHub</a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/jasper-oudemans/">
-                  LinkedIn
-                </a>
-              </li>
-            </ul>
-          </div>
-        </ProfileSection>
-      </footer>
     </>
   );
 };
