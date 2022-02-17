@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Banner from "./Banner";
 
 const Header = () => {
   return (
@@ -26,6 +27,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <Banner />
     </header>
   );
 };
