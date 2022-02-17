@@ -76,9 +76,10 @@ ul li a {
   object-fit: cover;
 }
 
-.aboutMeSection {
+.profileSection {
   display: flex;
   margin-top: 2rem;
+  margin-right: 0.5rem;
 }
 
 .aside {
@@ -199,6 +200,7 @@ footer aside {
 
 .contact {
   padding: 1rem;
+  padding-top: 0;
 }
 
 .contact-info li {

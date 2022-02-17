@@ -1,57 +1,18 @@
 import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Banner from "./components/Banner";
+import ProfileSection from "./components/ProfileSection";
+import MainProject from "./components/MainProject";
+import Project from "./components/Project";
 
 function App() {
   return (
     <div>
-      <header>
-        <h1 class="mainHeader">Jasper Oudemans</h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="#aboutMe">About me</a>
-            </li>
-            <li>
-              <a href="#work">Work</a>
-            </li>
-            <li>
-              <a href="#contact">Contact me</a>
-            </li>
-            <li>
-              <a
-                href="/downloadable/jasperOUDEMANS-resume.pdf"
-                download="jasperOUDEMANS-resume"
-                id="resume"
-              >
-                Resume PDF
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <section class="banner">
-        <img
-          src="https://images.unsplash.com/photo-1506908423287-b833c9eaacf1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-          alt="banner"
-          id="banner"
-        />
-
-        <div class="profile">
-          <img
-            src="/images/profile-picture.jpeg"
-            alt="Picture of me"
-            class="profile-pic"
-          />
-        </div>
-      </section>
-
+      <Header />
+      <Banner />
       <main>
-        <section class="aboutMeSection" id="aboutMe">
-          <aside class="aside">
-            <h3>About</h3>
-            <h3>me</h3>
-          </aside>
-
+        <ProfileSection title="About Me">
           <div class="aboutMe">
             <p>
               I am a current student at the coding bootcamp of the University of
@@ -75,108 +36,61 @@ function App() {
               <br />
             </p>
           </div>
-        </section>
+        </ProfileSection>
 
         <br />
         <br />
 
-        <section class="work-section" id="work">
-          <aside class="aside">
-            <h3>Work</h3>
-          </aside>
-
+        <ProfileSection title="Work">
           <div class="images">
-            <div class="relative big">
-              <div class="label">
-                <h4>Travel Planner</h4>
-              </div>
-              <img
-                src="/images/travelPlanner.png"
-                alt="Screenshot of travel planner app"
-                class="img"
-                id="project1"
+            <MainProject
+              title="Travel Planner"
+              src="/images/travelPlanner.png"
+              alt="Screenshot of travel planner app"
+              href="https://github.com/jasperoudemans/travel-planner"
+            />
+
+            <div class="images2">
+              <Project
+                title="Restaurant Review App"
+                src="/images/restaurantReview.png"
+                alt="Screenshot of restaurant review app"
+                href="https://github.com/jasperoudemans/baby-yelp"
               />
-              <div class="filter">
-                <a href="https://github.com/jasperoudemans/travel-planner"></a>
-              </div>
+
+              <Project
+                title="HTML Generator (CLI)"
+                src="/images/HTMLGenerator.png"
+                alt="Project3"
+                href="https://github.com/jasperoudemans/team_profile_generator"
+              />
             </div>
 
             <div class="images2">
-              <div class="relative small">
-                <div class="label">
-                  <h4>Restaurant Review App</h4>
-                </div>
+              <Project
+                title="Text Editor (PWA)"
+                src="/images/textEditor.png"
+                alt="Screenshot of text editor app"
+                href="https://github.com/jasperoudemans/textEditor"
+              />
 
-                <img
-                  src="/images/restaurantReview.png"
-                  alt="Screenshot of restaurant review app"
-                  class="img2"
-                />
-                <div class="filter">
-                  <a href="https://github.com/jasperoudemans/baby-yelp"></a>
-                </div>
-              </div>
-
-              <div class="relative small">
-                <div class="label">
-                  <h4>HTML Generator (CLI)</h4>
-                </div>
-
-                <img
-                  src="/images/HTMLGenerator.png"
-                  alt="Project3"
-                  class="img2"
-                />
-                <div class="filter">
-                  <a href="https://github.com/jasperoudemans/team_profile_generator"></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="images2">
-              <div class="relative small">
-                <div class="label">
-                  <h4>Text Editor (PWA)</h4>
-                </div>
-                <img
-                  src="/images/textEditor.png"
-                  alt="Screenshot of text editor app"
-                  class="img2"
-                />
-                <div class="filter">
-                  <a href="https://github.com/jasperoudemans/textEditor"></a>
-                </div>
-              </div>
-
-              <div class="relative small">
-                <div class="label">
-                  <h4>Social Network API</h4>
-                </div>
-                <img
-                  src="/images/socialNetworkAPI.png"
-                  alt="Screeshot of social network api"
-                  class="img2"
-                />
-                <div class="filter">
-                  <a href="https://github.com/jasperoudemans/social-media-backend-API"></a>
-                </div>
-              </div>
+              <Project
+                title="Social Network API"
+                src="/images/socialNetworkAPI.png"
+                alt="Screeshot of social network api"
+                href="https://github.com/jasperoudemans/social-media-backend-API"
+              />
             </div>
           </div>
-        </section>
+        </ProfileSection>
       </main>
 
       <br />
       <br />
-
-      <footer class="footer">
-        <div class="footer-section" id="contact">
-          <aside>
-            <h3>Contact me</h3>
-          </aside>
-
-          <div class="contact">
-            <ul class="contact-info">
+      <footer>
+        <ProfileSection title="Contact Me">
+          <div className="contact">
+            <ul className="contact-info">
               <li>707-590-****</li>
               <li>
                 <a href="mailto:jasperoudemans@gmail.com">
@@ -193,7 +107,7 @@ function App() {
               </li>
             </ul>
           </div>
-        </div>
+        </ProfileSection>
       </footer>
     </div>
   );
