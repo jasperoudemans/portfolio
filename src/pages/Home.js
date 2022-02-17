@@ -34,7 +34,7 @@ const Home = () => {
       <br />
       <br />
 
-      <ProfileSection title="Work" id="work">
+      <ProfileSection title="Projects" id="work">
         <div class="images">
           <MainProject
             title="Travel Planner"

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Banner from "./Banner";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   return (
@@ -8,10 +9,10 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <a href="#aboutMe">About me</a>
+            <HashLink to="/#aboutMe">About me</HashLink>
           </li>
           <li>
-            <a href="#work">Work</a>
+            <HashLink to="/#work">Projects</HashLink>
           </li>
           <li>
             <Link to="/contact">Contact me</Link>
