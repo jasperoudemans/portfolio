@@ -1,6 +1,5 @@
 import "./App.css";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import ProfileSection from "./components/ProfileSection";
 import MainProject from "./components/MainProject";
@@ -12,7 +11,7 @@ function App() {
       <Header />
       <Banner />
       <main>
-        <ProfileSection title="About Me">
+        <ProfileSection title="About Me" id="aboutMe">
           <div class="aboutMe">
             <p>
               I am a current student at the coding bootcamp of the University of
@@ -41,7 +40,7 @@ function App() {
         <br />
         <br />
 
-        <ProfileSection title="Work">
+        <ProfileSection title="Work" id="work">
           <div class="images">
             <MainProject
               title="Travel Planner"
@@ -50,7 +49,7 @@ function App() {
               href="https://github.com/jasperoudemans/travel-planner"
             />
 
-            <div class="images2">
+            <div className="images2">
               <Project
                 title="Restaurant Review App"
                 src="/images/restaurantReview.png"
@@ -66,7 +65,7 @@ function App() {
               />
             </div>
 
-            <div class="images2">
+            <div className="images2">
               <Project
                 title="Text Editor (PWA)"
                 src="/images/textEditor.png"
@@ -88,7 +87,7 @@ function App() {
       <br />
       <br />
       <footer>
-        <ProfileSection title="Contact Me">
+        <ProfileSection title="Contact Me" id="contact">
           <div className="contact">
             <ul className="contact-info">
               <li>707-590-****</li>

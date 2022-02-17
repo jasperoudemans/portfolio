@@ -1,6 +1,6 @@
-const ProfileSection = ({ title, children }) => {
+const ProfileSection = ({ title, children, id }) => {
   return (
-    <section className="profileSection">
+    <section className="profileSection" id={id}>
       <aside className="aside">
         <h3>{title}</h3>
       </aside>
